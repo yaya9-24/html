@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>form</h1>
+    <!-- enctype="multipart/form-data"는 사진 추가나 파일 첨부할 때 반드시 사용!! -->
+    <!-- <form action="???.jsp" method="post" enctype="multipart/form-data"></form> -->
+     <form action="#" method="get">
+        <!-- name은 key 이고 양영준은 vaule 즉, key-value 값이다. -->
+        <!-- name은 서버 전송용이고 id는 자바스크립트와 css용이다. -->
+        <label for="name">이름:</label><input type="text" name="name" id="name" value="홍길동">
+        <label for="name">국어:</label><input type="number" name="kor" id="kor" value="99">
+        <label for="name">영어:</label><input type="number" name="eng" id="eng" value="88">
+        <label for="name">수학:</label><input type="number" name="math" id="math" value="77">
+        <input type="submit">
+     </form>
+
+     <form action="#" method="get">
+        <p><label for="name">이름:</label><input type="text" name="name" id="name" value="홍길동"></p>
+        <p><label for="name">국어:</label><input type="number" name="kor" id="kor" value="99"></p>
+        <p><label for="name">영어:</label><input type="number" name="eng" id="eng" value="88"></p>
+        <p><label for="name">수학:</label><input type="number" name="math" id="math" value="77"></p>
+        <p><input type="submit"></p>
+     </form>
+
+     <form action="#" method="get">
+        <table border="1">
+            <tr>
+                <td><label for="name">이름:</label></td>
+                <td><input type="text" name="name" id="name" value="홍길동"></td>
+            </tr>
+            <tr>
+                <td><label for="kor">국어:</label></td>
+                <td><input type="number" name="kor" id="kor" value="99"></td>
+            </tr>
+            <tr>
+                <td><label for="eng">영어:</label></td>
+                <td><input type="number" name="eng" id="eng" value="88"></td>
+            </tr>
+            <tr>
+                <td><label for="math">수학:</label></td>
+                <td><input type="number" name="math" id="math" value="77"></td>
+            </tr>
+            <tr>
+                <td><input type="submit"></td>
+                <td></td>
+            </tr>
+        </table>                                
+     </form>
+</body>
+</html>

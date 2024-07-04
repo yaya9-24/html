@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+           width: 100%;
+        }
+        input[type=text],
+        input[type=password],
+        input[type=tel],select{
+           width: 88%;
+           padding: 8px 8px;
+           margin: 8px 0px;
+           display: inline-block;
+           border: 1px solid seagreen;
+           border-radius: 10px;
+        }
+        input[type=submit]{
+           width: 50%;
+           padding: 8px 8px;
+           margin: 8px 0px;
+           border-radius: 10px;
+           background-color: rgb(52, 100, 4);
+           color: azure;
+        }
+        input[type=submit]:hover{
+           background-color: rgb(30, 57, 3);
+        }
+      </style>
+</head>
+<body>
+    <h1>search form</h1>  
+     <form action="#" method="get">
+        <table border="1">
+            <tr>
+                <td>
+                    <!-- name은 서버 전송용이고 id는 자바스크립트와 css용이다. -->
+                    <select name="searchKey" id="searchKey">
+                        <option value="name">name</option>
+                        <option value="tel">tel</option>
+                    </select>
+                </td>
+                <td><input type="text" name="search_word" id="search_word" value="java" placeholder="검색어를 입력하세요"></td>
+            </tr>                        
+            <tr>
+                <td><input type="submit"></td>
+                <td></td>
+            </tr>
+        </table>                                
+     </form>
+</body>
+</html>

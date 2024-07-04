@@ -1,0 +1,2 @@
+http://127.0.0.1:5500/html01_hello.html			# http 프로토콜 , 5500은 포트 , 127.0.0.1은 localhost 라고도 함
+file:///C:/MULTI_EDU_26/html/work/html01_hello.html	# 파일 프로토콜
